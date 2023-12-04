@@ -1,0 +1,3 @@
+#!/usr/bin/python3
+PYFILE=${!VARNAME-my_main.py}
+python -m compileall -f "$PYFILE" -o "${PYFILE}c"
