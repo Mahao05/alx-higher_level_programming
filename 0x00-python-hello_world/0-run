@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-python3 -c "$PYCODE"
-           OR
-#!/usr/bin/python3
-export MY_VARIABLE="Best School"
+if [ -z "$PYFILE" ]; 
+  echo "Error: Python file name not set"
+  exit 1
+fi
+python "$PYFILE"
