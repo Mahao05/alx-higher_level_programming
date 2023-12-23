@@ -1,6 +1,2 @@
 #!/usr/bin/python3
-if [ -z "$PYFILE" ]; 
-  echo "Error: Python file name not set"
-  exit 1
-fi
-python "$PYFILE"
+python3 "$PYFILE"

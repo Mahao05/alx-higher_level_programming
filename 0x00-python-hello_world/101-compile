@@ -1,5 +1,2 @@
-#!/usr/bin/python3
-PYFILE=$1
-python -m compileall $PYFILE
-COMPiledFILE=$(basename $PYFILE).pyc
-python -m compileall $PYFILE -o $COMPiledFILE
+#!/bin/bash
+python3 -m compileall -b $PYFILE
