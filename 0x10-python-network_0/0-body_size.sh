@@ -1,2 +1,3 @@
 #!/bin/bash
-curl -s -o /dev/null -w "%{size_download}" "$1"
+curl -s "$1" | wc -c
+echo
